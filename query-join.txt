@@ -63,4 +63,5 @@ INNER JOIN `degrees`
 ON `courses`.`degree_id` = `degrees`.`id`
 INNER JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
-WHERE `departments`.`name` = "Dipartimento di Matematica";
+WHERE `departments`.`name` = "Dipartimento di Matematica"
+GROUP BY `teachers`.`id`;
